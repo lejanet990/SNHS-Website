@@ -1,0 +1,142 @@
+/*preset all margins to zero*/
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*style navbar*/
+ul{
+  list-style-type: none;
+  background-color: #685F74;
+  overflow: hidden; 
+  padding: 1em;
+  text-align: center
+}
+
+li{
+  display: inline; 
+}
+
+li a {
+  text-decoration: none; color: #f5f0f6; font-size: 1.5em; font-family:'Lucida Sans'; padding: 1em; 
+}
+
+li a:hover{
+  background-color:#CA9CE1;
+}
+
+/*format home page*/
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: Geneva;
+  width: 100%;
+  height: 100vh; 
+}
+
+h2{
+  font-size: 60px;
+  background: #eee;
+  padding: 8px 24px;
+  border-radius: 10px;
+}
+
+h4{
+  font-size: 20px;
+  background: #eee;
+  padding: 8px 24px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+div:nth-child(2){
+  background-image: url("snhs website assets/milkyway.jpg");
+  background-size: cover;
+}
+
+div:nth-child(3){
+  background: white;
+}
+
+div:nth-child(4){
+  background-image: url("snhs website assets/sun.JPEG"); 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div:nth-child(5){
+  background: #FF312E; 
+  /*background: white;*/
+}
+
+div:nth-child(6){
+  height: 400px;
+  background-image: url("snhs website assets/hike.JPG");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div:nth-child(7){
+  background: #D9F2B4; 
+  /*background: white;*/
+}
+
+div:nth-child(8){
+  background-image: url("snhs website assets/simpkins.JPEG"); 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div:nth-child(9){
+  background: #3E505B; 
+}
+
+div:nth-child(10){
+  background-image: url("snhs website assets/group.JPEG"); 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div:nth-child(11){
+  background: #998650; 
+}
+
+div:nth-child(12){
+  background-image: url("snhs website assets/pygmy.JPG"); 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div:nth-child(13){
+  background: #400406; 
+}
+
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: scale-down;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("snhs website assets/Bessie.png") no-repeat;
+      background-size: cover;
+    }
+}
+
+/*format calendar*/
+#calendar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
